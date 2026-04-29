@@ -4,7 +4,7 @@
  * todos sus caracteres en mayúsculas y separados por espacios.
  * Ejemplo: Para "Ana" devolverá "A N A".
  * @param {string} palabra
- * @returns
+ * @returns {string}
  */
 const separaEnMayusculas = palabra => palabra.toUpperCase().split('').join(' ');
 
@@ -16,7 +16,7 @@ console.log(separaEnMayusculas('Ana'));
  * de palabras que tiene el nombre.
  * Ejemplo: Para "Antonio Alberto Jesús" devolverá 3.
  * @param {string} nombre
- * @returns
+ * @returns {number}
  */
 const cuentaPalabras = nombre => nombre.split(' ').length;
 
@@ -28,7 +28,7 @@ console.log(cuentaPalabras('Antonio Alberto Jesús'));
  * en una frase.
  * @param {string} frase
  * @param {string} letra
- * @returns
+ * @returns {number}
  */
 const cuentaLetras = (frase, letra) => frase.match(new RegExp(letra, 'gi')).length;
 
