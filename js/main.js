@@ -6,9 +6,11 @@
  * @param {string} palabra
  * @returns {string}
  */
-const separaEnMayusculas = palabra => palabra.toUpperCase().split('').join(' ');
+const separaEnMayusculas = palabra => typeof palabra === 'string' ? palabra.toUpperCase().split('').join(' ') : '';
 
 console.log(separaEnMayusculas('Ana'));
+console.log(separaEnMayusculas());
+console.log(separaEnMayusculas(2));
 
 /**
  * Ejercicio 2:
