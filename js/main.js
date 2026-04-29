@@ -20,9 +20,11 @@ console.log(separaEnMayusculas(2));
  * @param {string} nombre
  * @returns {number}
  */
-const cuentaPalabras = nombre => nombre.split(' ').length;
+const cuentaPalabras = nombre => typeof nombre === 'string' ? nombre.split(' ').length : '0';
 
 console.log(cuentaPalabras('Antonio Alberto Jesús'));
+console.log(cuentaPalabras(2));
+console.log(cuentaPalabras());
 
 /**
  * Ejercicio 3:
