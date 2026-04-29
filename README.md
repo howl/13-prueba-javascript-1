@@ -1,4 +1,4 @@
-# Javascript: Prueba javasript 1
+# Javascript: Prueba javascript 1
 
 ## Ejercicio 1
 
