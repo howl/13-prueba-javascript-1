@@ -9,3 +9,15 @@
 const separaEnMayusculas = palabra => palabra.toUpperCase().split('').join(' ');
 
 console.log(separaEnMayusculas('Ana'));
+
+/**
+ * Ejercicio 2:
+ * Declara una función que acepte un nombre como parámetro y devuelva el número
+ * de palabras que tiene el nombre.
+ * Ejemplo: Para "Antonio Alberto Jesús" devolverá 3.
+ * @param {string} nombre
+ * @returns
+ */
+const cuentaPalabras = nombre => nombre.split(' ').length;
+
+console.log(cuentaPalabras('Antonio Alberto Jesús'));
