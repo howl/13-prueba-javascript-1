@@ -34,6 +34,16 @@ console.log(cuentaPalabras());
  * @param {string} letra
  * @returns {number}
  */
-const cuentaLetras = (frase, letra) => frase.match(new RegExp(letra, 'gi')).length;
+const cuentaLetras = (frase, letra) => {
+  if (typeof frase === 'string' && typeof letra === 'string') {
+    const coincidencias = frase.match(new RegExp(letra, 'gi'));
+    return coincidencias ? coincidencias.length : 0;
+  }
+  else
+    return 0;
+};
 
 console.log(cuentaLetras('No es que tenga poco dinero, es que tengo un exceso de mes al final del sueldo.', 'o'));
+console.log(cuentaLetras('No es que tenga poco dinero, es que tengo un exceso de mes al final del sueldo.', 'z'));
+console.log(cuentaLetras(2, 'o'));
+console.log(cuentaLetras('o'));
